@@ -1,1 +1,16 @@
+type: install
+jpsVersion: '1.8.1'
+id: mono2micro-ui
+name: Mono2Micro UI
+baseUrl: https://raw.githubusercontent.com/sych74/docker-mono2micro-ui/main
 
+description:
+  text: Mono2Micro is an AI-driven tool for semi-automatically transforming Java monoliths to microservices 
+  short: Mono2Micro is an AI-driven tool for semi-automatically transforming Java monoliths to microservices 
+
+skipNodeEmails: true
+
+nodes:
+  - cloudlets: 32
+    nodeGroup: cp
+    image: ibmcom/mono2micro-ui:latest
